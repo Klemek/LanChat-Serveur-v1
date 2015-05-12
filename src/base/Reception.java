@@ -133,8 +133,8 @@ public class Reception implements Runnable{
 								break;
 							case "/list":
 								sayP("Liste de connectés :");
-								for(int k = 0; k < c.getClients().length; k++){
-									sayP(c.getClients()[k].getAdminMark()+c.getClients()[k].getPseudo());
+								for(Client c1:c.getClients().values()){
+									sayP(c1.getAdminMark()+c1.getPseudo());
 								}
 								break;
 							case "/me":
